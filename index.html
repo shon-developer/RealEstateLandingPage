@@ -6,15 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Real Estate Landing Page</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: "576px",
+            md: "960px",
+            lg: "1227px",
+            xl: "1440px",
+          },
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
   </head>
   <body>
     <header>
       <div
-        class="bg-[url('/Photos/mainBackground.png')] w-full h-screen bg-no-repeat bg-center bg-cover bg-slate-800 bg-blend-overlay opacity-100 relative"
+        class="bg-[url('/Photos/mainBackground.png')] w-full h-screen bg-no-repeat bg-center bg-cover bg-zinc-700 bg-blend-overlay opacity-100 relative"
       >
-        <nav class="relative container mx-auto p-6">
+        <nav class="relative container mx-auto p-6 px-12 md:px-24">
           <!-- flex container -->
-          <div class="flex items-center justify-between px-24">
+          <div class="flex items-center justify-between">
             <!-- logo -->
             <div class="pt-2">
               <svg
@@ -54,7 +78,7 @@
                 />
               </svg>
             </div>
-            <div class="flex space-x-6 text-gray-200 text-lg">
+            <div class="hidden md:block flex space-x-6 text-gray-200 text-lg">
               <a href="#">Location</a>
               <a href="#">Blogs</a>
               <a href="#">Testimonials</a>
@@ -63,7 +87,30 @@
           </div>
         </nav>
         <hr class="w-[90%] ml-[5%]" />
+        <div id="hero">
+          <div class="container mx-auto mt-28 px-24">
+            <div
+              class="flex flex-col items-center md:items-start mb-32 space-y-12 text-white text-center md:text-left"
+            >
+              <h1
+                class="max-w-lgtext-3xl md:text-5xl lg:text-6xl font-bold tracking-wide leading-8"
+              >
+                Home that makes<br />You Living Life
+              </h1>
+              <p class="text-gray-300 text-lg">
+                Are you looking for amazing real estate? Don't <br />
+                worry! We got it for you!
+              </p>
+              <a
+                class="px-12 py-4 rounded-full bg-indigo-600 font-medium"
+                href="#"
+                >Learn More</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
+      <!-- Hero Section -->
     </header>
   </body>
 </html>

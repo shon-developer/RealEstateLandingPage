@@ -4,11 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=EB+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Real Estate Landing Page</title>
     <script>
       tailwind.config = {
         theme: {
+          fontFamily: {
+            garamount: ["EB Garamound"],
+          },
           screens: {
             sm: "576px",
             md: "960px",
@@ -17,7 +23,7 @@
           },
           extend: {
             colors: {
-              clifford: "#da373d",
+              buttonbg: "#6663E9",
             },
           },
         },
@@ -31,10 +37,10 @@
       }
     </style>
   </head>
-  <body>
+  <body class="bg-zinc-800">
     <header>
       <div
-        class="bg-[url('/Photos/mainBackground.png')] w-full h-screen bg-no-repeat bg-center bg-cover bg-zinc-700 bg-blend-overlay opacity-100 relative"
+        class="relative bg-[url('/Photos/mainBackground.png')] w-full h-screen bg-no-repeat bg-center bg-cover bg-zinc-700 bg-blend-overlay opacity-100 relative"
       >
         <nav class="relative container mx-auto p-6 px-12 md:px-24">
           <!-- flex container -->
@@ -93,7 +99,7 @@
               class="flex flex-col items-center md:items-start mb-32 space-y-12 text-white text-center md:text-left"
             >
               <h1
-                class="max-w-lgtext-3xl md:text-5xl lg:text-6xl font-bold tracking-wide leading-8"
+                class="max-w-lg text-3xl md:text-5xl lg:text-6xl font-bold tracking-wide leading-8"
               >
                 Home that makes<br />You Living Life
               </h1>
@@ -102,7 +108,7 @@
                 worry! We got it for you!
               </p>
               <a
-                class="px-12 py-4 rounded-full bg-indigo-600 font-medium"
+                class="px-12 py-4 rounded-full bg-buttonbg font-medium"
                 href="#"
                 >Learn More</a
               >
@@ -110,7 +116,232 @@
           </div>
         </div>
       </div>
+      <!-- Hero -->
+      <div
+      class="h-[100px] absolute mt-[-40px] pt-8 rounded-md left-6 right-6 bg-white text-center text-blue-600 uppercase font-medium rounded-2xl"
+    >
+      <ul class="flex flex-wrap justify-evenly text-xl md:text-3xl font-garamount">
+        <li>Logo</li>
+        <li>Logo</li>
+        <li>Logo</li>
+        <li>Logo</li>
+        <li>Logo</li>
+      </ul>
+    </div >
+      
       <!-- Hero Section -->
     </header>
+    
+  </div>
+      <!-- Section-2 -->
+    <section class="h-full w-full bg-blue-100 mt-4">
+      <div>
+        <div class="container pt-24 pb-10 flex items= center justify-center text-center">
+          <h1 
+          class="sm:text-3xl md:text-5xl lg:text-6xl font-bold text-slate-800 leading-normal">Our Best Estate, <br> Are Modern!</h1>
+        </div>
+      </div>
+      <!-- Cards -->
+      <div class="container py-32 py-24 flex flex-wrap justify-evenly px-32">
+        <!-- Card-1 -->
+      <div class="">
+        <div
+          class="relative bg-[url('/Photos/cardImage1.png')] w-[350px] h-[400px] bg-no-repeat bg-center bg-cover rounded-3xl"
+        >
+          <div
+            class="absolute top-[350px] left-6 w-[300px] h-[100px] bg-white rounded-2xl"
+          >
+            <div class="flex items-center justify-around h-[100px]">
+              <div>
+                <h3 class="font-medium text-gray-700 text-xl">Mixtownia</h3>
+                <p class="text-blue-600 text-lg leading-loose font-bold">$205,500</p>
+              </div>
+              <button
+                class="text-xs bg-buttonbg py-2 px-4 text-white rounded-full"
+              >
+                Details
+              </button>
+            </div>
+          </div>
+        </div>
+    </div>
+          <!-- Card-2 -->    
+          <div class="mt-[24px]">
+            <div
+              class="relative bg-[url('/Photos/cardImage2.png')] w-[350px] h-[400px] bg-no-repeat bg-center bg-cover rounded-3xl"
+            >
+              <div
+                class="absolute top-[350px] left-6 w-[330px] h-[100px] bg-white rounded-2xl"
+              >
+                <div class="flex items-center justify-around h-[100px]">
+                  <div>
+                    <h3 class="font-medium text-gray-700 text-xl">Mirtawan</h3>
+                    <p class="text-blue-600 text-lg leading-loose font-bold">$102,200</p>
+                  </div>
+                  <button
+                    class="text-xs bg-buttonbg py-2 px-4 text-white rounded-full"
+                  >
+                    Details
+                  </button>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- Card-3 -->
+        <div class="mt-[40px]">
+          <div
+            class="relative bg-[url('/Photos/cardImage3.png')] w-[350px] h-[400px] bg-no-repeat bg-center bg-cover rounded-3xl"
+          >
+            <div
+              class="absolute top-[350px] left-6 w-[300px] h-[100px] bg-white rounded-2xl"
+            >
+              <div class="flex items-center justify-around h-[100px]">
+                <div>
+                  <h3 class="font-medium text-gray-700 text-xl">Wartawan</h3>
+                  <p class="text-blue-600 text-lg leading-loose font-bold">$135,900</p>
+                </div>
+                <button
+                  class="text-xs bg-buttonbg py-2 px-4 text-white rounded-full"
+                >
+                  Details
+                </button>
+              </div>
+            </div>
+          </div>
+      </div>
+      <!-- Card-4 -->
+      <div class="mt-[150px]">
+        <div
+          class="relative bg-[url('/Photos/cardImage4.png')] w-[350px] h-[400px] bg-no-repeat bg-center bg-cover rounded-3xl"
+        >
+          <div
+            class="absolute top-[350px] left-6 w-[300px] h-[100px] bg-white rounded-2xl"
+          >
+            <div class="flex items-center justify-around h-[100px]">
+              <div>
+                <h3 class="font-medium text-gray-700 text-xl">Mixtownia</h3>
+                <p class="text-blue-600 text-lg leading-loose font-bold">$135,900</p>
+              </div>
+              <button
+                class="text-xs bg-buttonbg py-2 px-4 text-white rounded-full"
+              >
+                Details
+              </button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Card-5 -->
+    <div class="mt-[128px]">
+      <div
+        class="relative bg-[url('/Photos/cardImage5.png')] w-[350px] h-[400px] bg-no-repeat bg-center bg-cover rounded-3xl"
+      >
+        <div
+          class="absolute top-[350px] left-6 w-[300px] h-[100px] bg-white rounded-2xl"
+        >
+          <div class="flex items-center justify-around h-[100px]">
+            <div>
+              <h3 class="font-medium text-gray-700 text-xl">Mirtawan</h3>
+              <p class="text-blue-600 text-lg leading-loose font-bold">$135,900</p>
+            </div>
+            <button
+              class="text-xs bg-buttonbg py-2 px-4 text-white rounded-full"
+            >
+              Details
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Card-6 -->
+    <div class="mt-[96px]">
+      <div
+        class="relative bg-[url('/Photos/cardImage6.png')] w-[350px] h-[400px] bg-no-repeat bg-center bg-cover rounded-3xl"
+      >
+        <div
+          class="absolute top-[350px] left-6 w-[300px] h-[100px] bg-white rounded-2xl"
+        >
+          <div class="flex items-center justify-around h-[100px]">
+            <div>
+              <h3 class="font-medium text-gray-700 text-xl">Wartawan</h3>
+              <p class="text-blue-600 text-lg leading-loose font-bold">$135,900</p>
+            </div>
+            <button
+              class="text-xs bg-buttonbg py-2 px-4 text-white rounded-full"
+            >
+              Details
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Card-7 -->
+    <div class="mt-[96px]">
+      <div
+        class="relative bg-[url('/Photos/cardImage7.png')] w-[350px] h-[400px] bg-no-repeat bg-center bg-cover rounded-3xl"
+      >
+        <div
+          class="absolute top-[300px] left-6 w-[270px] h-[100px] bg-white rounded-2xl"
+        >
+          <div class="flex items-center justify-around h-[100px]">
+            <div>
+              <h3 class="font-medium text-gray-700 text-xl">Mixtownia</h3>
+              <p class="text-blue-600 text-lg leading-loose font-bold">$205,500</p>
+            </div>
+            <button
+              class="text-xs text-buttonbg-500 py-2 px-4 text-white rounded-full"
+            >
+              Details
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Card-8 -->
+    <div class="mt-[150px]">
+      <div
+        class="relative bg-[url('/Photos/cardImage8.png')] w-[350px] h-[400px] bg-no-repeat bg-center bg-cover rounded-3xl"
+      >
+        <div
+          class="absolute top-[300px] left-6 w-[270px] h-[100px] bg-white rounded-2xl"
+        >
+          <div class="flex items-center justify-around h-[100px]">
+            <div>
+              <h3 class="font-medium text-gray-700 text-xl">Mirtawan</h3>
+              <p class="text-blue-600 text-lg leading-loose font-bold">$102,200</p>
+            </div>
+            <button
+              class="text-xs text-buttonbg-500 py-2 px-4 text-white rounded-full">
+      
+              Details
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Card-9 -->
+        <div class="mt-[200px]">
+      <div
+        class="relative bg-[url('/Photos/cardImage9.png')] w-[350px] h-[400px] bg-no-repeat bg-center bg-cover rounded-3xl"
+      >
+        <div
+          class="absolute top-[300px] left-6 w-[270px] h-[100px] bg-white rounded-2xl"
+        >
+          <div class="flex items-center justify-around h-[100px]">
+            <div>
+              <h3 class="font-medium text-gray-700 text-xl">Wartawan</h3>
+              <p class="text-blue-600 text-lg leading-loose font-bold">$135,900</p>
+            </div>
+            <button
+              class="text-xs text-buttonbg-500 py-2 px-4 text-white rounded-full"
+            >
+              Details
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </section>
   </body>
 </html>
